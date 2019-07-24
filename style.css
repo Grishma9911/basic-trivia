@@ -1,0 +1,36 @@
+.hippo {
+    background-color: black;
+    color: rgb(214, 174, 174);
+    text-align: center;
+    background-position: center;
+    width: 900px;
+    padding: 20px 15px;
+    margin: auto;
+}
+
+.bear {
+    background-color: black;
+    color: rgb(214, 174, 174);
+    text-align: center;
+    background-position: center;
+    width: 900px; 
+    margin: 20px auto;
+    padding: 20px 15px;
+}
+
+#doit {
+    padding: 15px 30px;
+    font-size: 20px;
+    margin: 4px 4px;
+    background-color: rgb(214, 219, 204);
+    color: brown;
+}
+
+#monkey {
+    padding: 15px 30px;
+    font-size: 20px;
+    margin: 4px 4px;
+    background-color: rgb(214, 219, 204);
+    color: brown;
+}
+
