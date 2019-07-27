@@ -47,13 +47,13 @@ $(document).ready(function() {
 
 })
 
-function game1() {
-    // Get the checkbox
-    var checkBox = document.getElementById("clasic");
-    var checkBox1 = document.getElementById("mindbobling");
-    // Get the output text
-    var text = document.getElementById("right");
-    var text1 = document.getElementById("wrong");
+// function game1() {
+//     // Get the checkbox
+//     var checkBox = document.getElementById("clasic");
+//     var checkBox1 = document.getElementById("mindbobling");
+//     // Get the output text
+//     var text = document.getElementById("right");
+//     var text1 = document.getElementById("wrong");
   
     // If the checkbox is checked, display the output text
     // var right = document.getElementById("rt");
@@ -61,18 +61,18 @@ function game1() {
 
     //when i hit right ans 
     
-    $("#clasic").on("click", function(){
+//     $("#clasic").on("click", function(){
 
         
-        if (checkBox == true){
-            CntRight++;
+//         if (checkBox == true){
+//             CntRight++;
             
-            console.log(CntRight);
-        } else if (checkBox1 == false){
-            CntWrong++;
+//             console.log(CntRight);
+//         } else if (checkBox1 == false){
+//             CntWrong++;
             
-            console.log(CntWrong);
-        }
-    });
+//             console.log(CntWrong);
+//         }
+//     });
 
-game1();
+// game1();
