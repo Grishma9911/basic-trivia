@@ -1,21 +1,42 @@
 .hippo {
-    background-color: black;
-    color: rgb(214, 174, 174);
+    /* background-color: rgba(26, 184, 97, 0.384); */
+    color: rgba(160, 26, 26, 0.767);
+    font-size: 30px;
     text-align: center;
     background-position: center;
     width: 900px;
-    padding: 20px 15px;
+    padding: 25px 25px;
     margin: auto;
+    height: 500px;
+    margin-top: 150px;
 }
 
+#mouse {
+    /* background-color: rgba(26, 184, 97, 0.384); */
+    text-align: center;
+    background-position: center;
+    width: 900px;
+    padding: 25px 25px;
+    margin: auto;
+    height: 800px;
+    margin-top: 280px;
+    color: darkgreen;
+    font-size: 30px;
+}
+
+.butterfly {
+    color: rgba(160, 26, 26, 0.767);
+}
 .bear {
-    background-color: black;
+    /* background-color: rgba(26, 184, 97, 0.384); */
     color: rgb(214, 174, 174);
     text-align: center;
     background-position: center;
     width: 900px; 
-    margin: 20px auto;
-    padding: 20px 15px;
+    padding: 25px 25px;
+    height: 500px;
+    margin: auto;
+    margin-top: 150px;
 }
 
 #doit {
@@ -33,4 +54,22 @@
     background-color: rgb(214, 219, 204);
     color: brown;
 }
+
+.donkey {
+    margin: auto;
+    padding: 150px;
+}
+
+.sub-bear {
+    margin-top: 150px;
+    color: rgba(160, 26, 26, 0.767);
+    font-size: 20px;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-size: cover; */
+}
+
 

@@ -1,78 +1,66 @@
-//counter
-var CntRight = 0;
-var CntWrong = 0;
+$(document).ready(function() {
 
-
-function myFunction() {
-    timer--;
-    $("#timer").html(timer + "  Seconds")
-    if(timer == 0) {
-        gameOver();
+    var CntRight = 0;
+    var CntWrong = 0;
+    
+    
+    function myFunction() {
+        timer--;
+        $("#timer").html(timer + "  Seconds")
+        if(timer == 0) {
+            gameOver();
+        }
     }
-}
 
-var timer = 30;
-var countDown;
+    var timer = 30;
+    var countDown;
     $("#doit").on("click", function() {
         countDown=setInterval(myFunction, 1000)
         $("#mouse").show() 
         $(".bear").hide()
         $(".hippo").hide()
     });
-
-function gameOver() {
-    $(".bear").show()
-    $("#mouse").hide()
-    $(".hippo").hide()
-}
-
-$("#monkey").on("click", gameOver)
-        
+    
+    function gameOver() {
+        $(".bear").show()
+        $("#mouse").hide()
+        $(".hippo").hide()
+    }
+    
+    $("#monkey").on("click", gameOver)
+    
     $("#mouse").hide()
     $(".bear").hide()
     
+ //    
+    $(".right").on("click", function(){
+        CntRight++;
+        console.log(CntRight);
+        $("#gotit").text(CntRight);
+        console.log("I clicked right");
 
-//check qus ans with if else statments
-//when you hit done, it will take you to new page
-//give vales to correct ans and all
-//
+   
+});
+$(".mindbobling").on("click", function(){
+    CntWrong++;
+    console.log(CntWrong);
+    $("#didnot").text(CntWrong);
+    console.log("I clicked wrong");
 
-function check() {
-    document.getElementById("mindbobling").checked = true;
-  }
-  function uncheck() {
-    document.getElementById("mindbobling").checked = false;
-}
-$(document).ready(function() {
 
-})
+});
 
-// function game1() {
-//     // Get the checkbox
-//     var checkBox = document.getElementById("clasic");
-//     var checkBox1 = document.getElementById("mindbobling");
-//     // Get the output text
-//     var text = document.getElementById("right");
-//     var text1 = document.getElementById("wrong");
-  
-    // If the checkbox is checked, display the output text
-    // var right = document.getElementById("rt");
-    // var wrong = document.getElementById("wr");
+    $("#monkey").on("click", function() {
 
-    //when i hit right ans 
-    
-//     $("#clasic").on("click", function(){
-
-        
-//         if (checkBox == true){
-//             CntRight++;
+       console.log("I clicked the submit button");
+        function game1() {
+            // Get the checkbox
             
-//             console.log(CntRight);
-//         } else if (checkBox1 == false){
-//             CntWrong++;
-            
-//             console.log(CntWrong);
-//         }
-//     });
-
-// game1();
+            var checkBox = document.getElementsByClassName("right");
+            var checkBox1 = document.getElementsByClassName("mindbobling");
+            console.log(checkBox);
+            console.log(checkBox1);
+        }
+        game1()
+    });
+    });
